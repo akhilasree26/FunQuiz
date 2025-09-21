@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Facts Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>FunQuiz</h1>
+
+        <!-- Start Screen -->
+        <div id="start-screen">
+            <p>Click the button below for random intresting questions!</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz" class="hide">
+            <!-- Progress Bar -->
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+
+            <div id="question">Question text will appear here</div>
+            <ul id="options">
+                <li><button class="option-btn" data-option="A">Option A</button></li>
+                <li><button class="option-btn" data-option="B">Option B</button></li>
+                <li><button class="option-btn" data-option="C">Option C</button></li>
+                <li><button class="option-btn" data-option="D">Option D</button></li>
+            </ul>
+            <button id="next-btn">Next</button>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result" class="hide">
+            <h2>Your Score:</h2>
+            <p id="score"></p>
+            <button onclick="location.reload()">Restart Quiz</button>
+        </div>
+
+        <!-- Creator Section -->
+        <div id="creator">
+            Created by Akhila Sree
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
